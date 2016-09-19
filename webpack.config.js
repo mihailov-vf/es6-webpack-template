@@ -7,7 +7,9 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/dist/'
     },
+    devtool: 'source-map',
     plugins: [
+        new webpack.optimize.UglifyJsPlugin()
     ],
     module: {
         loaders: [
